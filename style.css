@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 16px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #334155;
+    margin-top: 10px;
+}
+
+.formulario {
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+#mensagem {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.erro {
+    color: #dc2626;
+}
+
+.sucesso {
+    color: #15803d;
+}
+
+.aluno {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border-left: 5px solid;
+}
+
+.aprovado {
+    background-color: #dcfce7;
+    border-left-color: #16a34a;
+    color: #166534;
+}
+
+.reprovado {
+    background-color: #fee2e2;
+    border-left-color: #dc2626;
+    color: #991b1b;
+}
+
+.aluno-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.status {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#resumo {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #e0f2fe;
+    border-radius: 6px;
+    color: #075985;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 16px;
+    }
+
+    .aluno {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

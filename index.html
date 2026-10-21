@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Notas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Painel de Notas da Turma</h1>
+
+        <section class="formulario">
+            <h2>Adicionar aluno</h2>
+
+            <form id="form-aluno">
+                <label for="nome">Nome do aluno:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite o nome do aluno"
+                >
+
+                <label for="nota">Nota (0 a 10):</label>
+                <input
+                    type="number"
+                    id="nota"
+                    placeholder="Digite a nota"
+                    min="0"
+                    max="10"
+                    step="any"
+                >
+
+                <button type="submit">Adicionar aluno</button>
+            </form>
+
+            <p id="mensagem" role="status" aria-live="polite"></p>
+        </section>
+
+        <section class="lista-alunos">
+            <h2>Lista de alunos</h2>
+
+            <div id="lista"></div>
+
+            <h3 id="resumo">Aprovados: 0 de 0</h3>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
